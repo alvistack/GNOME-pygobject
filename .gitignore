@@ -85,3 +85,5 @@ Makefile.in
 *.pyd
 *.dll.a
 .coverage
+
+.pybuild/
