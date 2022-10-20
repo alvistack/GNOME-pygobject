@@ -1,0 +1,62 @@
+Source: python-pygobject
+Section: python
+Priority: optional
+Standards-Version: 4.5.0
+Maintainer: Wong Hoi Sing Edison <hswong3i@gmail.com>
+Homepage: https://github.com/GNOME/pygobject/tags
+Vcs-Browser: https://github.com/alvistack/GNOME-pygobject
+Vcs-Git: https://github.com/alvistack/GNOME-pygobject.git
+Build-Depends:
+ debhelper,
+ debhelper-compat (= 10),
+ dh-python,
+ cython3,
+ fdupes,
+ libcairo2-dev,
+ libffi-dev (>= 3.0),
+ libfreetype6-dev,
+ libgirepository1.0-dev (>= 1.56.0),
+ libglib2.0-dev (>= 2.56.0),
+ python3-cairo (>= 1.16.0),
+ python3-cairo-dev (>= 1.16.0),
+ python3-dev,
+ python3-setuptools,
+
+Package: python3-gi
+Architecture: amd64
+Description: Python bindings for GObject Introspection
+ PyGObject is a Python package which provides bindings for GObject based
+ libraries such as GTK, GStreamer, WebKitGTK, GLib, GIO and many more.
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+ ${python3:Depends},
+ gir1.2-glib-2.0 (>= 1.48.0),
+ python3,
+
+Package: python-gi-dev
+Architecture: amd64
+Description: Python bindings for GObject Introspection
+ This package contains the development headers needed to build C
+ extensions which use pygobject.
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+ ${python3:Depends},
+ gir1.2-glib-2.0 (>= 1.48.0),
+ libffi-dev (>= 3.0),
+ python3,
+ python3-gi (= ${source:Version}),
+
+Package: python3-gi-cairo
+Architecture: amd64
+Description: Python bindings for GObject Introspection
+ This package contains the Python 3 Cairo bindings for GObject. It is
+ mostly used by other bindings to map their GObjects to Python objects.
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+ ${python3:Depends},
+ python3,
+ python3-cairo (>= 1.16.0),
+ python3-gi (= ${source:Version}),

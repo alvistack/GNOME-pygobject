@@ -1,0 +1,6 @@
+python-pygobject source: file-without-copyright-information
+python-pygobject source: no-debian-changes
+python-pygobject source: not-binnmuable-any-depends-any
+python-pygobject source: source-contains-prebuilt-windows-binary
+python-pygobject source: source-is-missing
+python-pygobject source: source-package-encodes-python-version

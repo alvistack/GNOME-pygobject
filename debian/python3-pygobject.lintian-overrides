@@ -1,0 +1,4 @@
+python3-pygobject: copyright-without-copyright-notice
+python3-pygobject: initial-upload-closes-no-bugs
+python3-pygobject: no-manual-page
+python3-pygobject: zero-byte-file-in-doc-directory
