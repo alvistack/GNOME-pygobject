@@ -29,3 +29,4 @@
 *.pyd
 *.dll.a
 .coverage
+.pybuild/
