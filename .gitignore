@@ -87,3 +87,5 @@ Makefile.in
 *.dll.a
 .coverage
 poetry.lock
+
+.pybuild/
