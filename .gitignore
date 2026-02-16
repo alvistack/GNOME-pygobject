@@ -31,3 +31,4 @@
 .coverage
 pdm.lock
 .pdm-python
+.pybuild/
